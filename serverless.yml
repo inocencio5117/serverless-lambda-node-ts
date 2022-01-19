@@ -26,11 +26,11 @@ provider:
 
 functions:
   hello:
-    handler: src/functions/hello.handle
+    handler: src/functions/generateCertification.handle
     events:
       - http:
-          path: /hello
-          method: GET
+          path: /generateCertification
+          method: POST
           cors: true
 
 resources:
